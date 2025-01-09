@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./src/ProjGuessNumberGame1.js"></script>
+</head>
+
+<body class="bg-[#283D3B] text-[#EDDDD4] min-w-[340px] h-screen flex justify-center items-center p-3">
+    <!-- <p id="trial"></p> just for to show randNum during coding -->
+    <div class="box w-full  max-w-[570px] rounded-lg overflow-hidden">
+
+        <div class="gameTopbox px-1 py-5 bg-[#C44536] text-center">
+            <h1 class="text-2xl font-bold sm:text-3xl md:text-4xl">Number Guessing Game</h1>
+            <p class="my-2 mx-7 text-base sm:text-lg md:text-xl">Enter a number from 1 to 100
+            </p>
+            <!-- <span class="text-black text-base sm:text-lg md:text-xl lg:text-2xl  font-semibold">You will get 10 chances!</span> -->
+
+        </div>
+
+        <div class="gameCbox px-1 py-5 bg-[#197278]">
+            <label class="mx-5 sm:ml-14 text-base sm:text-lg md:text-xl" for="inputNum">Enter A Number:
+            </label>
+            <input class="mx-1 sm:mx-0 w-16 sm:w-28 md:w-32 h-6 p-2 text-center outline-none rounded-md text-black"
+                id="inputNum" type="text" autofocus placeholder="1-100">
+
+            <button
+                class="bg-white h-6 w-16 sm:w-28 md:w-32 mx-1 outline-none rounded-md text-black px-3 text-sm sm:text-base "
+                id="sNumbers">Submit</button>
+
+            <p class="mx-5 sm:ml-14 text-base sm:text-lg md:text-xl" id="nofAttempts">Number of
+                Attempts:
+            </p>
+            <p class="mx-5 sm:ml-14 text-base sm:text-lg md:text-xl" id="nGuessed">Numbers Guessed:
+            </p>
+            <p class="mx-5 p-2 text-sm sm:text-lg md:text-xl hidden md:py-2 text-center bg-[#772E25] rounded-md my-4"
+                id="result">
+            </p>
+            <div class="gameBotbox">
+                <button
+                    class="mx-3 text-sm sm:text-base md:text-lg bg-white text-black text-center rounded-md px-4 hidden"
+                    id="loadB">Re-Start Game</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
